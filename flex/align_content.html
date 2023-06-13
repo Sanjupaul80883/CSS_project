@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align item</title>
+    <style>
+        .align_item{
+        height: 150px;
+        border: 1px solid;
+        display: flex;
+    }
+    .item{
+        height: 100px;
+        width: 100px;
+        background-color: #20aad0;
+        border: 1px solid white;
+    }
+    .flex_start{
+        align-items: flex_start;
+    }
+    .flex_end{
+        align-items: flex-end;
+    }
+    .center{
+        align-items: center;
+    }
+    .itemo{
+        height: auto;
+        width: 200px;
+        background-color: #20aad0;
+        border: 1px solid white;
+    }
+    .stretch{
+        align-items: stretch;
+    }
+    .baseline{
+        align-items: baseline;
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <div>align_item flex_start</div>
+    <div class="align_item flex_start ">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+    </div>
+    <div>align_item flex_end</div>
+    <div class="align_item flex_end">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+    </div>
+    <div>align_item center</div>
+    <div class="align_item center">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+    </div>
+    <div>align_item stretch</div>
+    <div class="align_item stretch">
+        <div class="itemo">item1</div>
+        <div class="itemo">item2</div>
+        <div class="itemo">item3</div>
+        <div class="itemo">item4</div>
+    </div>
+    <div>align_item baseline</div>
+    <div class="align_item baseline">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex properties</title>
+    <style>
+        .container{
+            background-color: #fff;
+            border: 1px solid black;
+            display: flex;
+
+        }
+        .item{
+            height: 100px;
+            width: 100px;
+        }
+        .item1{ order: 5; background-color: #b5310c;}
+        .item2{ order: 2; background-color: #d48d12;}
+        .item3{ order: 3; background-color: #aad421;}
+        .item4{ order: 4; background-color: #11a4a7;}
+        .item5{ order: 1; background-color: #1fd04c;}
+
+        .align_self_container{
+            background-color: #451c8d;
+            height: 200px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .align_self{
+            height: 100px;
+            width: 100px;
+            border: 1px solid ;
+        }
+        .start{
+            align-self: start;
+            background-color: #a3a30b;
+        }
+        .center{
+            align-self: center;
+            background-color: #10a73b;
+        }
+        .end{
+            align-self: end;
+            background-color: #0c9888;
+        }
+        .baseline{
+            align-self:baseline;
+            background-color: rgb(161, 27, 168);
+        }
+        .stretch{
+            align-self: stretch;
+            background-color: #05911d;
+        }
+        /* Flex grow */
+        .flex_grow{
+            height: 110px;
+            background-color: #dbdbdb;
+            display: flex;
+        }
+        .grow1{
+            border: 1px solid ;
+            background-color: #27d647;
+            height: 100px;
+            width: 100px;
+            flex-grow: 1;
+        }
+        .grow2{
+            border: 1px solid ;
+            background-color: #1dafcc;
+            height: 100px;
+            width: 100px;
+            flex-grow: 1;
+        }
+        .grow3{
+            border: 1px solid ;
+            background-color: #a1d627;
+            height: 100px;
+            width: 100px;
+            flex-grow: 1;
+        }
+        .flex_grow1{
+            flex-grow: 1;
+        }
+        .flex_grow2{
+            flex-grow: 2;
+        }
+        .flex_grow3{
+            flex-grow: 3;
+        }
+        /* flex shrink */
+        .flex_shrink{
+            background-color: #fcd3ee;
+            display: flex;
+            width: 300px;
+            border: 1px solid;
+        }
+        .shrink{
+            width: 100px;
+            height: 100px;
+            border: 1px solid;
+            flex-shrink: 1;
+        }
+        .flex_shrink1{
+            background-color: #172bb2;
+        }
+        .flex_shrink2{
+            background-color: #0ecd27;
+        }
+        .flex_shrink3{
+            background-color: #d221c0;
+        }
+        .shrink1{
+            background-color: #109a55;
+            flex-shrink: 1;
+        }
+        .shrink2{
+            background-color: #bf27b0;
+            flex-shrink: 2;
+        }
+        .shrink3{
+            background-color: #18aed3;
+            flex-shrink: 3;
+        }
+        /* flex basis */
+        .container_of_basis{
+            background-color: #26b8c8;
+            height: 150px;
+            border: 1px solid ;
+            display: flex;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+         }
+        .box1{
+            background-color: #27a81b;
+        }
+        .box2{
+            background-color: #a3b910;
+            flex-basis: 50%;
+        }
+        .box3{
+            background-color: #3653d3;
+        }
+        .box4{
+            background-color: #c9d619;
+        }
+        .box5{
+            background-color: #d619b0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Flex items order -->
+    <div class="container">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+        <div class="item item4">item4</div>
+        <div class="item item5">item5</div>
+    </div>
+    <!-- Align self -->
+    <div class="align_self_container">
+        <div class="align_self start">align start</div>
+        <div class="align_self center">align center</div>
+        <div class="align_self end">align end</div>
+        <div class="align_self baseline">align baseline</div>
+        <div class="stretch">align stretch</div>
+    </div>
+    <!-- Flex grow  -->
+    <div class="flex_grow">
+        <div class="grow1 flex_grow1">grow1</div>
+        <div class="grow1">grow1</div>
+        <div class="grow1">grow1</div>
+        <div class="grow1">grow1</div>
+    </div>
+    <div class="flex_grow ">
+        <div class="grow2 flex_grow2">grow2</div>
+        <div class="grow2">grow2</div>
+        <div class="grow2">grow2</div>
+        <div class="grow2">grow2</div>
+    </div>
+    <div class="flex_grow">
+        <div class="grow3 flex_grow3">grow3</div>
+        <div class="grow3">grow3</div>
+        <div class="grow3">grow3</div>
+        <div class="grow3">grow3</div>
+    </div>
+    <!-- Flex shrink -->
+    <div class="flex_shrink flex_shrink1">
+        <div class="shrink  shrink1">shrink1</div>
+        <div class="shrink">shrink1</div>
+        <div class="shrink">shrink1</div>
+        <div class="shrink">shrink1</div>
+    </div>
+    <div class="flex_shrink flex_shrink2">
+        <div class="shrink  shrink2">shrink2</div>
+        <div class="shrink">shrink2</div>
+        <div class="shrink">shrink2</div>
+        <div class="shrink">shrink2</div>
+    </div>
+    <div class="flex_shrink flex_shrink3">
+        <div class="shrink  shrink3">shrink3</div>
+        <div class="shrink">shrink3</div>
+        <div class="shrink">shrink3</div>
+        <div class="shrink">shrink3</div>
+    </div>
+
+    <!-- Flex basis -->
+    <div class="container_of_basis">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+        <div class="box box5">box5</div>
+    </div>
+</body>
+</html>
