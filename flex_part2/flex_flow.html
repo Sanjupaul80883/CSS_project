@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex flow</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .flex_flow{
+            background-color: green;
+            border: 1px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: aliceblue;
+            text-align: center;
+        }
+        .item{
+            height: 100px;
+            width: 100px;
+            border: 1px solid white;
+            background-color: blue;
+        }
+        .no_wrap{
+            flex-flow: row no-wrap;
+        }
+        .row_wrap{
+            flex-flow: row wrap;
+        }
+        .column_wrap{
+            height: 300px;
+            flex-flow: column wrap;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>flex_flow row no-wrap</div>
+    <div class="flex_flow no_wrap">
+        <div class="item flow">item1</div>
+        <div class="item flow">item2</div>
+        <div class="item flow">item3</div>
+        <div class="item flow">item4</div>
+        <div class="item flow">item5</div>
+    </div>
+    <div>flex_flow row_wrap</div>
+    <div class="flex_flow row_wrap">
+        <div class="item flow">item1</div>
+        <div class="item flow">item2</div>
+        <div class="item flow">item3</div>
+        <div class="item flow">item4</div>
+        <div class="item flow">item5</div>
+    </div>
+    <div>flex_flow column_wrap</div>
+    <div class="flex_flow column_wrap">
+        <div class="item flow">item1</div>
+        <div class="item flow">item2</div>
+        <div class="item flow">item3</div>
+        <div class="item flow">item4</div>
+        <div class="item flow">item5</div>
+    </div>
+    
+</body>
+</html>

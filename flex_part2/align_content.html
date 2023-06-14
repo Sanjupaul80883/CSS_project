@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .align_content{
+        background-color: #e1f8b4;
+        border: 1px solid;
+        height: 150px;
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+       }
+       .item{
+        width: 50px;
+        background-color: #14a45f;
+        border: 1px solid white;
+       }
+       .items{
+       height: 50px;
+        width: 50px;
+        background-color: #14a45f;
+        border: 1px solid white;
+       }
+       .stretch{
+        align-content: stretch;
+       }
+       .space_around{
+        align-content: space-around;
+       }
+       .space_between{
+        align-content: space-between;
+       }
+       .space_evenly{
+        align-content: space-evenly;
+       }
+       .center{
+        align-content: center;
+       }
+       .flex_start{
+        align-items: flex-start;
+       }
+       .flex_end{
+        align-content: flex-end;
+       }
+
+    </style>
+</head>
+<body>
+    <!-- div{align_content stretch}+div{$}.align_content.stretch>div.items.stretch*5 -->
+    <h3>Align content properties work in cross axis </h3>
+    <div>align_content:  stretch is a by default value.</div>
+    <div class="align_content stretch">1
+        <div class="item stretch"></div>
+        <div class="item stretch"></div>
+        <div class="item stretch"></div>
+        <div class="item stretch"></div>
+        <div class="item stretch"></div>
+    </div>
+    <div>align_content space_around</div>
+    <div class="align_content space_around">2
+        <div class="items stretch"></div>
+        <div class="items stretch"></div>
+        <div class="items stretch"></div>
+        <div class="items stretch"></div>
+        <div class="items stretch"></div>
+    </div>
+    <div>align_content space_between</div>
+    <div class="align_content space_between">3
+        <div class="items stretch"></div>
+        <div class="items stretch"></div>
+        <div class="items stretch"></div>
+        <div class="items stretch"></div>
+        <div class="items stretch"></div>
+    </div>
+    <div>align_content space_evenly</div>
+    <div class="align_content space_evenly">4
+        <div class="items stretch"></div>
+        <div class="items stretch"></div>
+        <div class="items stretch"></div>
+        <div class="items stretch"></div>
+        <div class="items stretch"></div>
+    </div>
+    <div>align_content center</div>
+    <div class="align_content center">5
+        <div class="items stretch"></div>
+        <div class="items stretch"></div>
+        <div class="items stretch"></div>
+        <div class="items stretch"></div>
+        <div class="items stretch"></div>
+    </div>
+    <div>align_content flex_start</div>
+    <div class="align_content flex_start">7
+        <div class="items stretch"></div>
+        <div class="items stretch"></div>
+        <div class="items stretch"></div>
+        <div class="items stretch"></div>
+        <div class="items stretch"></div>
+    </div>
+    <div>align_content flex_end</div>
+    <div class="align_content flex_end">7
+        <div class="items stretch"></div>
+        <div class="items stretch"></div>
+        <div class="items stretch"></div>
+        <div class="items stretch"></div>
+        <div class="items stretch"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Wrap</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .flex_wrap{
+            background-color: green;
+            border: 1px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: aliceblue;
+            text-align: center;
+        }
+        .item{
+            height: 100px;
+            width: 100px;
+            border: 1px solid white;
+            background-color: blue;
+        }
+        .no_wrap{
+            flex-wrap: no-wrap;
+        }
+        .wrap{
+            flex-wrap: wrap;
+        }
+        .wrap_reverse{
+            flex-wrap: wrap-reverse;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>flex_wrap no-_wrap</div>
+    <div class="flex_wrap no-_wrap">
+        <div class="item wrap">item1</div>
+        <div class="item wrap">item2</div>
+        <div class="item wrap">item3</div>
+        <div class="item wrap">item4</div>
+        <div class="item wrap">item5</div>
+    </div>
+    <div>flex_wrap wrap</div>
+    <div class="flex_wrap wrap">
+        <div class="item wrap">item1</div>
+        <div class="item wrap">item2</div>
+        <div class="item wrap">item3</div>
+        <div class="item wrap">item4</div>
+        <div class="item wrap">item5</div>
+    </div>
+    <div>flex_wrap wrap_reverse</div>
+    <div class="flex_wrap wrap_reverse">
+        <div class="item wrap">item1</div>
+        <div class="item wrap">item2</div>
+        <div class="item wrap">item3</div>
+        <div class="item wrap">item4</div>
+        <div class="item wrap">item5</div>
+    </div>
+    
+</body>
+</html>
