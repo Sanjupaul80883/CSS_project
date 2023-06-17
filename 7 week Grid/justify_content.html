@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify content</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:repeat(3, 100px);
+            grid-template-rows: repeat(2, 100px);
+            border: 2px solid ;
+            background-color: #e5d6f9;
+        }
+        .container1{justify-content: start;}
+        .container2{justify-content: end;}
+        .container3{justify-content: space-between;}
+        .container4{justify-content: center;}
+        .content{
+            border: 1px solid #000000;
+            color: #bf1dc7;
+        }
+    </style>
+</head>
+<body>
+    (div.container$>(div{content$}.content$)*5)*5
+    <div>Justify-contents: Start;</div>
+    <div class="container1 container">
+        <div class="content">content1</div>
+        <div class="content">content2</div>
+        <div class="content">content3</div>
+        <div class="content">content4</div>
+        <div class="content">content5</div>
+        <div class="content">content6</div>
+    </div>
+    <div>Justify-contents: end;</div>
+    <div class="container2 container">
+        <div class="content">content1</div>
+        <div class="content">content2</div>
+        <div class="content">content3</div>
+        <div class="content">content4</div>
+        <div class="content">content5</div>
+        <div class="content">content6</div>
+    </div>
+    <div>Justify-contents: space between ;</div>
+    <div class="container3 container">
+        <div class="content">content1</div>
+        <div class="content">content2</div>
+        <div class="content">content3</div>
+        <div class="content">content4</div>
+        <div class="content">content5</div>
+        <div class="content">content6</div>
+    </div>
+    <div>Justify-contents: center;</div>
+    <div class="container4 container">
+        <div class="content">content1</div>
+        <div class="content">content2</div>
+        <div class="content">content3</div>
+        <div class="content">content4</div>
+        <div class="content">content5</div>
+        <div class="content">content6</div>
+    </div>
+    
+</body>
+</html>

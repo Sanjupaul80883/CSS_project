@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify item</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:repeat(3, 100px);
+            grid-template-rows: repeat(2, 100px);
+            border: 2px solid ;
+            background-color: #e5d6f9;
+        }
+        .container1{justify-items: start;}
+        .container2{justify-items: end;}
+        .container3{justify-items: stretch;}
+        .container4{justify-items: center;}
+        .item{
+            border: 1px solid #000000;
+            color: #bf1dc7;
+        }
+    </style>
+</head>
+<body>
+    (div.container$>(div{item$}.item$)*5)*5
+    <div>Justify-items: Start;</div>
+    <div class="container1 container">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+        <div class="item">item6</div>
+    </div>
+    <div>Justify-items: end;</div>
+    <div class="container2 container">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+        <div class="item">item6</div>
+    </div>
+    <div>Justify-items: stretch ;</div>
+    <div class="container3 container">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+        <div class="item">item6</div>
+    </div>
+    <div>Justify-items: center;</div>
+    <div class="container4 container">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+        <div class="item">item6</div>
+    </div>
+    
+</body>
+</html>

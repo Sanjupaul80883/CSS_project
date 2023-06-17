@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+         .container1{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows:repeat(4, 1fr);
+            border: 1px solid #181717;
+            color: #1c63ba;
+            background-color: #c4f3b6;
+         }
+         .container2{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows:auto auto auto ;
+            border: 1px solid #181717;
+            color: #1c63ba;
+            background-color: #b6bbf3;
+         }
+         .container3{
+            display: grid;
+            grid-template-columns: 100px 200px 300px 100px ;
+            grid-template-rows:50px 20px 30px ;
+            border: 1px solid #181717;
+            color: #1c63ba;
+            background-color: #e8b6f3;
+         }
+         .container4{
+            display: grid;
+            grid-template-columns: 2fr 1fr 100px;
+            grid-template-rows:1fr 40px 3fr;
+            border: 1px solid #181717;
+            color: #1c63ba;
+            background-color: #c4f3b6;
+         }
+         .items{
+            border: 1px solid #181717;
+            border-radius: 5px;
+         }
+    </style>
+</head>
+<body>
+    <div>Grid template column and row in <b>fr</b> (fraction ratio) unit </div>
+    <div class="container1">
+        <div class="items item1">Item 1</div>
+        <div class="items item2">Item 2</div>
+        <div class="items item3">Item 3</div>
+        <div class="items item4">Item 4</div>
+        <div class="items item5">Item 5</div>
+        <div class="items item6">Item 6</div>
+    </div>
+    <div>Grid template column and row in <b>Auto</b> unit </div>
+    <div class="container2">
+        <div class="items item1">Item 1 Lorem ipsum dolor sit amet.</div>
+        <div class="items item2">Item 2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, laboriosam.</div>
+        <div class="items item3">Item 3</div>
+        <div class="items item4">Item 4</div>
+        <div class="items item5">Item 5</div>
+        <div class="items item6">Item 6</div>
+    </div>
+    <div>Grid template column and row in <strong>pixel</strong> unit </div>
+    <div class="container3">
+        <div class="items item1">Item 1</div>
+        <div class="items item2">Item 2</div>
+        <div class="items item3">Item 3</div>
+        <div class="items item4">Item 4</div>
+        <div class="items item5">Item 5</div>
+        <div class="items item6">Item 6</div>
+    </div>
+    <div>Grid template column and row in <b>fr fr px </b> (fraction ratio) unit </div>
+    <div class="container4">
+        <div class="items item1">Item 1</div>
+        <div class="items item2">Item 2</div>
+        <div class="items item3">Item 3</div>
+        <div class="items item4">Item 4</div>
+        <div class="items item5">Item 5</div>
+        <div class="items item6">Item 6</div>
+    </div>
+
+</body>
+</html>
