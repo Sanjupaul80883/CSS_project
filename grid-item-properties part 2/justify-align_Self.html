@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify and align self</title>
+    <style>
+           .container{
+            background-color: #e1f8c9;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 100px);
+            gap: 10px;
+            padding: 20px;
+            border: 10px solid #83ea23;
+            border-radius: 10px ;
+           }
+           .item{
+            border: 1px solid black;
+            background-color: #b4f0a6;
+           }
+           .item:nth-child(1){
+            justify-self: start;
+           }
+           .item:nth-child(2){
+            justify-self: end;
+           }
+           .item:nth-child(3){
+            justify-self: stretch;
+           }
+           .item:nth-child(4){
+            align-self: start;
+           }
+           .item:nth-child(5){
+            align-self: end;
+           }
+           .item:nth-child(6){
+            justify-self: center;
+            align-self: center;
+           }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">justify-self: start;</div>
+        <div class="item">justify-self: end;</div>
+        <div class="item">justify-self: stretch;</div>
+        <div class="item">align-self: start;</div>
+        <div class="item">align-self: end;</div>
+        <div class="item">justify-self: center;
+            align-self: center;</div>
+    </div>
+    
+</body>
+</html>
