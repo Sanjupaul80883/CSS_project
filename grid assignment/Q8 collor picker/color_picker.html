@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color picker</title>
+    <style>
+        *, ::after, ::before{
+            box-sizing: border-box;
+        }
+        .body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .main{
+            color: #ffffff;
+            background-color: #443333;
+            border: 1rem solid;
+            margin: 1rem;
+            padding: 2rem;
+            border-radius: 2rem;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 250px);
+            height: auto;
+            column-gap: 2rem;
+            row-gap: 1rem;
+            border-radius: 20px;
+            
+        }  
+        .color_card{
+            border-radius: .5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Felling Fancy</h1>
+        <div class="container">
+            <div class="color_card color" style="background-color: #9f1ece;">#9f1ece</div>
+            <div class="color_card color" style="background-color: #dc901e;">#dc901e</div>
+            <div class="color_card color" style="background-color: #646060;">#646060</div>
+            <div class="color_card color" style="background-color: #e72cb8;">#oooo00</div>
+            <div class="color_card color" style="background-color: #d32973;">#d32973</div>
+            <div class="color_card color" style="background-color: #2ec3da;">#2ec3da</div>
+            <div class="color_card color" style="background-color: #e5d8d8;">#e5d8d8</div>
+            <div class="color_card color" style="background-color: #1fbd99;">#1fbd99</div>
+        </div>
+    </div>
+</body>
+</html>

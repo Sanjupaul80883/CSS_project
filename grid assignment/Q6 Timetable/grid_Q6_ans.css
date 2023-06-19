@@ -1,0 +1,81 @@
+*, ::after, ::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.timetable_container{
+    border: .2rem solid gray;
+    padding: 1rem;
+    margin: 3rem 1rem;
+}
+.timetable_container > h1{
+    text-align: center;
+}
+.table_container{
+    border: .2rem solid gray;
+    padding: .5rem;
+    
+}
+.grid > div{
+    background-color: #54aab8;
+    font-size: 80%;
+}
+.time > div{
+    background-color: #e93b6a;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: 2rem;
+}
+
+.grid > :nth-child(1){
+    background-color: #b93dd4;
+}
+
+.grid > div{
+    border: 1px solid;
+    padding: .2rem;
+    text-align: center;
+}
+.grid > .launch{
+   background-color: yellow;
+   border: none;
+  text-align: center;
+}
+.lab{
+    background-color: #cdcccc;
+}
+.monday_lab{
+    grid-column-start: 7;
+    grid-column-end: 10;
+}
+.tuesday_lab{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.grid .wednesday_lab{
+    grid-column-start: 7;
+    grid-column-end: 10;
+    background-color: #54b654;
+}
+.thursday_lab{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.friday_lab{
+    grid-column-start: 7;
+    grid-column-end: 10;
+}
+.saturday_lab{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.grid .let_off{
+    grid-column-start: 7;
+    grid-column-end: 10;
+    background-color: #54b654;
+}
