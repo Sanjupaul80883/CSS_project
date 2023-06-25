@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+     margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.dashboard_container{
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem;
+    background-color: #2e2d2d;
+    color: #f0f8ff;
+}
+.container{
+    padding: 1rem;
+    margin: 1rem;
+}
+.row{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    padding: .5rem;
+    border: 1px solid;
+}
+.row > p{
+    text-align: start;
+
+}
+
+@media (max-width: 992px) {
+    body{
+        background-color: #8a2f2f;
+    }
+    .row{
+         grid-template-columns: 30% 70%;
+    }
+    .phone{
+    display: none;
+   }
+}

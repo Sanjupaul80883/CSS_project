@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+    <style>
+        .footer_container{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid;
+        }
+        .one_card{
+            margin-right: 1.5rem;
+        }
+        .flex{
+            display: flex;
+            flex-direction: column;
+        }
+        .flex> li{
+            color: #cacaca;
+            list-style: none;
+            padding: .3rem;
+            
+        }
+        .flex ul{
+            margin: 0px;
+            padding: 0px;
+        }
+        .foot{
+             padding: 2rem;
+            background-color: #1d1c1c;
+            color: #f0f8ff;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25% ;
+        }
+        .email{
+            padding: .5rem 1rem;
+            border: none;
+            margin-bottom: .5rem;
+        }
+        .btn{
+            padding: .5rem 1rem;
+            background-color: blue;
+            color: #fbfbfb;
+            font-weight: 700;
+            border: none;
+        }
+        @media (max-width: 512px) {
+            .foot{
+                grid-template-columns: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="footer_container">
+        <footer class="foot">
+            <div class="one_card ">
+                <h3 class="footer_heading">One Card</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero temporibus vero obcaecati, provident sit minima autem enim veniam dicta dolorem?</p>
+
+            </div>
+            <div class="navigation flex">
+                <h4 class="footer_heading">Navigation</h4>
+                <ul class="flex">
+                    <li>Home</li>
+                    <li>About us </li>
+                    <li>Careers</li>
+                    <li>Offers</li>
+                </ul>
+            </div>
+            <div class="support flex">
+                <h3 class="footer_heading">Support</h4>
+                <ul class="flex">
+                    <li>F. A. Q</li>
+                    <li>Cookies Policy </li>
+                    <li>Terms of Service </li>
+                    <li>Support</li>
+                </ul>
+            </div>
+            <div class="news flex">
+                <h3 class="footer_heading">Newsletter</h4>
+                <input class="email" type="text" placeholder="Your email id here" name="" id="">
+                <button class="btn">Subscribe</button>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
