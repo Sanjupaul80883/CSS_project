@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button of animation</title>
+    <style>
+        .container{
+            margin: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            padding: 2rem;
+            
+        }
+        .btn{
+            padding: 1rem 4rem;
+            border: none;
+            background-image: linear-gradient(to right, #626cee, #0d44d9);
+            border-radius: 1rem;
+            color: #ffffff;
+            font-size: 1.5rem;
+            height: 5rem;
+            width: 100%;
+            
+            
+        }
+        .btn:hover{
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+            animation:bounce 1s linear .30ms infinite alternate ;
+        }
+        
+       @keyframes bounce {
+         from {
+           /* pushes the sun down past the viewport */
+           transform: translateY(0vh);
+         }
+         to {
+           /* returns the sun to its default position */
+           transform: translateY(3vh);
+         }
+       }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="btn">Click me to visit in pw skill website</button>
+    </div>
+</body>
+</html>

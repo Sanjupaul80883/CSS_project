@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition by animation</title>
+    <style>
+        .container{
+            margin: 2rem;
+            border: 2px solid;
+            height: 30rem;
+            width: 35rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image{
+            height: 15rem;
+            width: 25rem;
+           
+            transition: all 1s ease-out;
+        }
+        .image:hover{
+            height: 20rem;
+            width: 35rem;
+            filter: grayscale(0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../Q4/image.PNG" alt="" class="image">
+    </div>
+</body>
+</html>

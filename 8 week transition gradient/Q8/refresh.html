@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 2rem;
+            height: 50rem;
+            width:100% ;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .box{
+            height: 4.5rem;
+            width: 4.5rem;
+            border-radius: 50%;
+            z-index: -0;
+            background-color: #dedede;
+            position: absolute;
+        }
+        .box1 {
+          background-image: linear-gradient(to right, #dedede, #dedede, rgb(163, 163, 164));
+          border-radius: 0px;
+          width: 100px;
+          width: 72px;
+          height: 30px;
+          
+          z-index: 1;
+          animation: name duration timing-function delay iteration-count direction fill-mode;
+          animation: circle 3s infinite  ;
+          position: absolute;
+        }
+        .box2 {
+          background-image: linear-gradient(to right, #dedede, #dedede, rgb(246, 122, 60));
+          border-radius: 0px;
+          width: 100px;
+          width: 70px;
+          height: 17px;
+          margin: 20px;
+          z-index: 1;
+          animation: circle 3.1s infinite  ;
+          position: absolute;
+        }
+        .box3{
+            background-image: linear-gradient(to right, #dedede, #dedede, rgb(40, 254, 65));
+          border-radius: 0px;
+          width: 100px;
+          width: 70px;
+          height: 17px;
+          margin: 20px;
+          z-index: 1;
+          animation: circle 3.2s infinite  ;
+          position: absolute;
+        }
+        .box4{
+            height: 3rem;
+            width: 3rem;
+            background-color: #ffffff;
+            position: absolute;
+            opacity: 100%;
+            border-radius: 50%;
+            border:  solid #ffffff;
+            z-index: 1;
+        }
+        .box5{
+            height: 4.5rem;
+            width: 4.5rem;
+            background-color: transparent;
+            position: absolute;
+            opacity: 100%;
+            border-radius: 50%;
+            border:  solid #ffffff;
+            z-index: 1;
+        }
+        
+        @keyframes circle {
+          0% {
+            transform: rotate(0);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box box1"></div>
+        <!-- <div class="box box2"></div>
+        <div class="box box3"></div> -->
+        <div class="box4"></div>
+        <div class="box5"></div>
+    </div>
+
+</body>
+</html>

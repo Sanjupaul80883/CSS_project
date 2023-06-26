@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:flex ;
+            justify-content: space-evenly;
+            margin: 6rem;
+        }
+        .card{
+            background-image: linear-gradient(to left, #3722d8, #0c82cc, #66b9ec);
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 2px solid;
+        }
+        .created{
+            color: #f0f8ff;
+        }
+        .num{
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+        .card > ul >li{
+            margin-left: 2rem;
+        }
+        .card1{
+            transform: rotate(-40deg);
+        }
+        .btn{
+            padding: .3rem 6rem;
+            background-image: linear-gradient(to right, #ccf5cc, rgb(6, 149, 6));
+            border: 0px;
+            border-radius: .3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card1 card">
+            <span class="num">#01</span> <span class="created">Created On: 01/01/2023</span>
+            <ul>
+                <h3>Important dates</h3>
+                <li>January 26 - Republic Day </li>
+                <li>August 15 - Independence Day</li>
+                <li>October 2 Gandhi Jayanti </li>
+                <li>August 29 - National Sports Day</li>
+            </ul>
+            <button class="btn">Mark As Done</button>
+        </div>
+        <div class="card2 card">
+            <span class="num">#01</span> <span class="created">Created On: 01/01/2023</span>
+            <ul>
+                <h3>Important dates</h3>
+                <li>January 26 - Republic Day </li>
+                <li>August 15 - Independence Day</li>
+                <li>October 2 Gandhi Jayanti </li>
+                <li>August 29 - National Sports Day</li>
+            </ul>
+            <button class="btn">Mark As Done</button>
+        </div>
+    </div>
+</body>
+</html>
